@@ -1,4 +1,4 @@
-<img src="https://2.bp.blogspot.com/-eapvY-vI4o0/V-i9A5r5TYI/AAAAAAAAAUk/XS651FEGcXk3yJxZBRv4zl3BDQCgRSIVgCLcB/s1600/logoSPT.png" title="Katana">
+<img src="https://4.bp.blogspot.com/-4TMfL321qUA/V-k_ZFBkzCI/AAAAAAAAAU4/5b02slJ7US0wnzmFFaDfiNnQAL3YMDp8ACLcB/s1600/logoSPT.png" title="STP">
 
 Social Toolkit for Phishing Attacks, a multiplatform tool to simulate phishing attack based on node.
 

